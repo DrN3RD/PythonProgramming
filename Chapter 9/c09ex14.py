@@ -11,7 +11,7 @@ def main():
     print("Graphical Random Walk\n")
     n = int(input("How many steps should I take? "))
 
-    win = GraphWin("Random Walk", 500,500)
+    win = GraphWin("Random Walk", 1100,1100)
     win.setCoords(-50,-50, 50, 50)
     curr = Point(0,0)
     next = Point(0,0)
