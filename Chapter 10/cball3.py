@@ -1,28 +1,8 @@
 
-from math import *
+from projectile import Projectile
 
 
-class Projectile:
-    def __init__(self,angle,velocity,height):
-        self.xpos = 0.0
-        self.ypos = height
-        theta = radians(angle)
-        self.xvel = velocity*cos(theta)
-        self.yvel = velocity*sin(theta)
 
-    def update(self,timestep):
-
-        self.xpos = self.xpos + timestep* self.xvel
-        self.yvel_1 = self.yvel -9.81*timestep
-
-        self.ypos = self.ypos + timestep*(self.yvel + self.yvel_1)/2
-        self.yvel = self.yvel_1
-
-    def getY(self):
-        return self.ypos
-
-    def getX(self):
-        return self.xpos
 
 def getInputs():
 
