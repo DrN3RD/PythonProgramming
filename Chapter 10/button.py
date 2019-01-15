@@ -8,7 +8,7 @@ class Button:
 
     def __init__(self,win,center,width,height,label):
 
-        qb = Button(myWin, centerPoint,width,height,'Quit')
+        #qb = Button(myWin, centerPoint,width,height,'Quit')
         w,h = width/2.0 , height/2.0
         x,y = center.getX(),center.getY()
 
