@@ -14,6 +14,7 @@ def getInputs():
     return  a,v,h,t
 
 def main():
+
     angle,vel,h0,timestep = getInputs()
 
     cball = Projectile(angle,vel,h0)
